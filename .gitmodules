@@ -1,0 +1,6 @@
+[submodule "frontEnd_WinMe"]
+	path = frontEnd_WinMe
+	url = https://github.com/LuisGordilloTadeo2003/frontEnd_WinMe.git
+[submodule "backEnd_WinMe"]
+	path = backEnd_WinMe
+	url = https://github.com/LuisGordilloTadeo2003/backEnd_WinMe.git
