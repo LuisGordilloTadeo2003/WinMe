@@ -1,0 +1,13 @@
+{
+  "name": "winme-project",
+  "version": "1.0.0",
+  "description": "Backend and Frontend project",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend_winme && npm run dev",
+    "frontend": "cd frontend_winme && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
