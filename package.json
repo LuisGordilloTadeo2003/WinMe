@@ -1,0 +1,24 @@
+{
+    "name": "winme",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+        "dev:backend": "cd backend_winme && php artisan serve",
+        "dev:frontend": "cd frontend_winme && npm start",
+        "build": "cd frontend_winme && npm run build",
+        "install:all": "concurrently \"cd backend_winme && composer install\" \"npm install\" \"cd frontend_winme && npm install\"",
+        "lint": "cd frontend_winme && npm run lint",
+        "test": "cd frontend_winme && npm run test"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "devDependencies": {
+        "wait-on": "^7.1.0"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=9.0.0"
+    }
+}
